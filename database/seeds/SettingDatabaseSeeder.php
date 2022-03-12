@@ -31,6 +31,5 @@ class SettingDatabaseSeeder extends Seeder
                 'outer_label' => 'outer shipping',
             ],
         ]);
-
     }
 }

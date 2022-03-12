@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'primary' => 'Primary',
+    'primary' => 'Home',
     'languages' => 'Languages',
     'add_new_language' => 'Add new language',
     'show_all' => 'Show all',
