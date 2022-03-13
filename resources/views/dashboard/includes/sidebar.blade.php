@@ -29,10 +29,10 @@
                         class="badge badge badge-danger badge-pill float-right mr-2"> </span>
                 </a>
                 <ul class="menu-content">
-                    <li class="active"><a class="menu-item" href=" "
+                    <li class="active"><a class="menu-item" href="{{route('admin.categories')}}"
                                           data-i18n="nav.dash.ecommerce"> {{__('admin/sidebar.show_all')}}</a>
                     </li>
-                    <li><a class="menu-item" href=" " data-i18n="nav.dash.crypto">{{__('admin/sidebar.add_new_primary_section')}}</a>
+                    <li><a class="menu-item" href="{{route('admin.categories.create')}}" data-i18n="nav.dash.crypto">{{__('admin/sidebar.add_new_primary_section')}}</a>
                     </li>
                 </ul>
             </li>

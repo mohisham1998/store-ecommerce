@@ -62,17 +62,13 @@ Route::group(['namespace' => 'Dashboard', 'middleware' => 'auth:admin' , 'prefix
 
 //******************************* ADMIN MAIN CATEGORIES *******************************
     Route::group(['prefix' => 'main_categories'], function () {
-        Route::get('/', 'MainCategoriesController@index')->name('admin.maincategories');
+        Route::get('/', 'MainCategoriesController@index')->name('admin.categories');
+        Route::get('create', 'MainCategoriesController@create')->name('admin.categories.create');
+        Route::post('store', 'MainCategoriesController@store')->name('admin.categories.store');
+        Route::get('edit/{id}', 'MainCategoriesController@edit')->name('admin.categories.edit');
+        Route::post('update/{id}', 'MainCategoriesController@update')->name('admin.categories.update');
+        Route::get('delete/{id}', 'MainCategoriesController@destroy')->name('admin.categories.delete');
 
-        Route::get('create', 'MainCategoriesController@create')->name('admin.maincategories.create');
-        Route::post('store', 'MainCategoriesController@store')->name('admin.maincategories.store');
-
-        Route::get('edit/{id}', 'MainCategoriesController@edit')->name('admin.maincategories.edit');
-        Route::post('update/{id}', 'MainCategoriesController@update')->name('admin.maincategories.update');
-
-        Route::get('delete/{id}', 'MainCategoriesController@destroy')->name('admin.maincategories.delete');
-
-        Route::get('status/{id}', 'MainCategoriesController@changeStatus')->name('admin.maincategories.status');
 
 //******************************* END ADMIN MAIN CATEGORIES *******************************
     });
