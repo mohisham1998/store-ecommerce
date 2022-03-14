@@ -61,13 +61,13 @@ Route::group(['namespace' => 'Dashboard', 'middleware' => 'auth:admin' , 'prefix
 
 
 //******************************* ADMIN MAIN CATEGORIES *******************************
-    Route::group(['prefix' => 'main_categories'], function () {
-        Route::get('/', 'MainCategoriesController@index')->name('admin.categories');
-        Route::get('create', 'MainCategoriesController@create')->name('admin.categories.create');
-        Route::post('store', 'MainCategoriesController@store')->name('admin.categories.store');
-        Route::get('edit/{id}', 'MainCategoriesController@edit')->name('admin.categories.edit');
-        Route::post('update/{id}', 'MainCategoriesController@update')->name('admin.categories.update');
-        Route::get('delete/{id}', 'MainCategoriesController@destroy')->name('admin.categories.delete');
+    Route::group(['prefix' => 'categories'], function () {
+        Route::get('/{type}', 'CategoriesController@index')->name('admin.categories');
+        Route::get('create/{type}', 'CategoriesController@create')->name('admin.categories.create');
+        Route::post('store', 'CategoriesController@store')->name('admin.categories.store');
+        Route::get('edit/{id}', 'CategoriesController@edit')->name('admin.categories.edit');
+        Route::post('update/{id}', 'CategoriesController@update')->name('admin.categories.update');
+        Route::get('delete/{id}', 'CategoriesController@destroy')->name('admin.categories.delete');
 
 
 //******************************* END ADMIN MAIN CATEGORIES *******************************

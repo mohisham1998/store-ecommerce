@@ -69,5 +69,17 @@ class Category extends Model
     }
 
 
+    public function _parent() {
+        return $this -> belongsTo(self::class , 'parent_id');
+    }
+
+
+    public function getChildren($id) {
+        return $this -> where('parent_id',$id) -> get();
+    }
+
+
+
+
 
 }

@@ -10,6 +10,12 @@ function getFolder(){
 }
 
 
+
+function getCategoryType($type) {
+
+    return $type === 'main' ? 'main' : 'child';
+}
+
 function uploadImage($folder,$image){
     $image->store('/', $folder);
     $filename = $image->hashName();
