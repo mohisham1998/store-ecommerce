@@ -1,0 +1,30 @@
+<?php
+
+return [
+    'active' => 'active',
+    'inactive' => 'inactive',
+    'main-categories' => 'Main Categories',
+    'child-categories' => 'Secondary Categories',
+    'home' => 'Home',
+    'all-main-categories' => 'All Main Categories',
+    'all-child-categories' => 'All Secondary Categories',
+    'main-category-add' => 'Add a new main category',
+    'main-category-edit' => 'Edit a main category',
+    'child-category-edit' => 'Edit a secondary category',
+    'child-category-add' => 'Add a new secondary category',
+    'main-category-data' => 'Category Data',
+    'main-category-name' => 'Name',
+    'child-category-name' => 'Name',
+    'main-category-slug' => 'Slug',
+    'main-category-statues' => 'Statues',
+    'main-category-photo' => 'Photo',
+    'choose-category' => 'Pick a category',
+    'please-choose-category' => 'Please pick a category',
+    'actions' => 'Actions',
+    'edit' => 'Edit',
+    'delete' => 'Delete',
+    'back' => 'Back',
+    'update' => 'Update',
+    'save' => 'Save',
+
+];
