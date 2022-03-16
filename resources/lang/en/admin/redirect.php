@@ -6,6 +6,7 @@ return [
    'invalid-data' => 'Wrong email or password please try again.',
     'category-not-exist' => 'This category does not exist.',
     'brand-not-exist' => 'This brand does not exist.',
+    'tag-not-exist' => 'This tag does not exist.',
     'successfully-added' => 'Added Successfully',
     'successfully-updated' => 'Updated Successfully',
     'successfully-deleted' => 'Deleted Successfully',

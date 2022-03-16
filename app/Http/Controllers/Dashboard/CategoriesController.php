@@ -41,7 +41,7 @@ class CategoriesController extends Controller
         $categories = '';
         $category_type = 'main';
         if ($type === 'child_category') {
-            $categories = Category::parent()->paginate(PAGINATION_COUNT);
+            $categories = Category::paginate(PAGINATION_COUNT);
             $category_type = 'child';
 
         }
@@ -63,7 +63,7 @@ class CategoriesController extends Controller
             if (isset($category->parent_id)) {
                 $category_type = 'child';
                 $type = 'child_category';
-                $categories = Category::parent()->paginate(PAGINATION_COUNT);
+                $categories = Category::paginate(PAGINATION_COUNT);
             }
 
 

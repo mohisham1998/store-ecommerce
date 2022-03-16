@@ -17,5 +17,7 @@ return [
     'shipping-inner' => 'Inner shipping',
     'shipping-outer' => 'Outer shipping',
     'brands' => 'Brands',
-    'brand-add' => 'Add a new brand'
+    'brand-add' => 'Add a new brand',
+     'tags' => 'Tags',
+    'tags-add' => 'Add a new tag',
 ];
