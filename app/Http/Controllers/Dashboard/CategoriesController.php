@@ -218,7 +218,7 @@ class CategoriesController extends Controller
                 $type = 'main_category';
                 $sub_categories = (new Category)->getChildren($category->id);
                 if (isset($sub_categories) && $sub_categories->count() > 0) {
-                    return redirect()->route('admin.categories', $type)->with(['error' => 'لأ يمكن حذف هذا القسم  ']);
+                    return redirect()->route('admin.categories', $type)->with(['error' => __('admin\redirect.cant-delete-category')]);
                 }
             }
 

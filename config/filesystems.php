@@ -60,9 +60,9 @@ return [
             'url' => env('APP_URL') . '/public',
             'visibility' => 'public',
         ],
-        'vendors' => [
+        'brands' => [
             'driver' => 'local',
-            'root' => public_path() . '/assets/images/vendors/',
+            'root' => public_path() . '/assets/images/brands/',
             'url' => env('APP_URL') . '/public',
             'visibility' => 'public',
         ],

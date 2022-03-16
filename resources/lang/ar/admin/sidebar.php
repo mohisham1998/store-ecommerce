@@ -16,5 +16,7 @@ return [
     'shipping-free' => 'شحن مجاني',
     'shipping-inner' => 'شحن داخلي',
     'shipping-outer' => 'وسائل خارجي',
+    'brands' => 'العلامات التجارية',
+    'brand-add' => 'اضافة علامة تجارية جديدة'
 
 ];

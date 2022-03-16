@@ -16,4 +16,6 @@ return [
     'shipping-free' => 'Free shipping',
     'shipping-inner' => 'Inner shipping',
     'shipping-outer' => 'Outer shipping',
+    'brands' => 'Brands',
+    'brand-add' => 'Add a new brand'
 ];

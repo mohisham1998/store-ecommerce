@@ -54,15 +54,15 @@
 
 
             <li class="nav-item"><a href=""><i class="la la-male"></i>
-                    <span class="menu-title" data-i18n="nav.dash.main">{{__('admin/sidebar.vendors')}}  </span>
+                    <span class="menu-title" data-i18n="nav.dash.main">{{__('admin/sidebar.brands')}}  </span>
                     <span
                         class="badge badge badge-success badge-pill float-right mr-2"> </span>
                 </a>
                 <ul class="menu-content">
-                    <li class="active"><a class="menu-item" href=" "
+                    <li class="active"><a class="menu-item" href="{{route('admin.brands')}}"
                                           data-i18n="nav.dash.ecommerce">{{__('admin/sidebar.show_all')}} </a>
                     </li>
-                    <li><a class="menu-item" href=" " data-i18n="nav.dash.crypto">{{__('admin/sidebar.vendor_add')}}</a>
+                    <li><a class="menu-item" href="{{route('admin.brands.create')}}" data-i18n="nav.dash.crypto">{{__('admin/sidebar.brand-add')}}</a>
                     </li>
                 </ul>
             </li>
